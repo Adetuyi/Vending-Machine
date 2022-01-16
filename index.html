@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Vending Machine</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Vending Machine Dispenser</h1>
+			<div class="machine-container">
+				<div class="machine">
+					<img src="vending-machine.png" alt="vending machine" />
+					<button class="in-stock-btn">See what's in stock</button>
+					<div class="in-stock">
+						<span class="cancel">X</span>
+						<header>
+							<span>Product</span>
+							<span>In stock</span>
+						</header>
+						<div class="vmOne"></div>
+					</div>
+				</div>
+				<div class="machine">
+					<img src="vending-machine.png" alt="vending machine" />
+					<button class="in-stock-btn">See what's in stock</button>
+					<div class="in-stock">
+						<span class="cancel">X</span>
+						<header>
+							<span>Product</span>
+							<span>In stock</span>
+						</header>
+						<div class="vmTwo"></div>
+					</div>
+				</div>
+			</div>
+			<button class="restock-btn">Restock All Machines</button>
+			<div class="restock-msg"></div>
+
+			<h2>Place order here:</h2>
+			<form>
+				<div>
+					<label>Drink:</label>
+					<select id="drink">
+						<option value=""></option>
+					</select>
+				</div>
+
+				<div>
+					<label>Amount:</label>
+					<input type="number" id="amount" />
+				</div>
+
+				<a href="#response"><button type="submit" id="submit">Submit</button></a>
+			</form>
+
+			<div class="response"></div>
+			<div class="drinksSold"></div>
+		</div>
+		<span id="response"></span>
+
+		<script src="script.js"></script>
+	</body>
+</html>
