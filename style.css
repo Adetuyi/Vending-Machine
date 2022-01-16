@@ -148,3 +148,19 @@ input {
 .eDrink {
 	width: 50px;
 }
+
+@media screen and (max-width: 480px) {
+	.machine-container {
+		flex-direction: column;
+	}
+
+	form {
+		display: block;
+	}
+	form > div:nth-child(1) {
+		margin: 0.5em 0;
+	}
+	select {
+		font-size: 0.7rem;
+	}
+}
