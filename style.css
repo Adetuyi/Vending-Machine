@@ -32,7 +32,6 @@ h1 {
 .machine {
 	flex-basis: 50%;
 	position: relative;
-	overflow: hidden;
 	padding-bottom: 2rem;
 }
 .machine img {
@@ -80,16 +79,16 @@ button:hover {
 	transform: translate(-50%, -50%) scaleY(0);
 }
 .machine .in-stock.active {
-	/* left: 50%; */
 	transform: translate(-50%, 0) scaleY(1);
 	opacity: 1;
 }
 .in-stock .cancel {
 	position: absolute;
 	right: 0;
+	transform: translateX(100%);
 	font-size: 1.2rem;
 	padding: 5px 10px;
-	background-color: #eeeeee80;
+	color: #fafafa;
 	cursor: pointer;
 }
 .in-stock header {
